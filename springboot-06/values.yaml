@@ -1,0 +1,18 @@
+global:
+  ingressSubdomain: gsi-dev-ocp43-vpc-7ec5d722a0ab3f463fdc90eeb94dbc70-0000.us-east.containers.appdomain.cloud
+  tlsSecretName: iks-vpc-test-dev-cluster
+
+springboot-06:
+  replicaCount: 3
+  
+  # For OpenShift set route.enabled=true
+  # For Kubernetes set route.enabled=false
+  route:
+    enabled: false
+  
+  # For OpenShift set ingress.enabled=false
+  # For Kubernetes set ingress.enabled=true
+  ingress:
+    enabled: true
+    tlsSecretName: iks-vpc-test-dev-cluster
+
