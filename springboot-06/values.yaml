@@ -3,7 +3,7 @@ global:
   tlsSecretName: iks-vpc-test-dev-cluster
 
 springboot-06:
-  replicaCount: 3
+  replicaCount: 6
   
   # For OpenShift set route.enabled=true
   # For Kubernetes set route.enabled=false
